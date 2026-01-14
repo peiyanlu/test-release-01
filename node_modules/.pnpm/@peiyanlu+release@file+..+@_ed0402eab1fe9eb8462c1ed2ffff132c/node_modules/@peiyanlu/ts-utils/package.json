@@ -1,0 +1,61 @@
+{
+  "name": "@peiyanlu/ts-utils",
+  "version": "0.0.1",
+  "description": "A lightweight TypeScript utility library with powerful type helpers and runtime tools.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest",
+    "prepublish": "tsdown",
+    "release": "release-it"
+  },
+  "main": "./dist/cjs/index.cjs",
+  "types": "./dist/cjs/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "types": "./dist/esm/index.d.mts"
+    },
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "tsdown": "^0.16.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "release-it-pnpm": "^4.6.5",
+    "@types/node": "^22.15.23",
+    "release-it": "^19.0.6"
+  },
+  "author": {
+    "name": "YanluPei",
+    "email": "peiyanlu@vip.qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:peiyanlu/ts-utils.git"
+  },
+  "homepage": "https://github.com/peiyanlu/ts-utils",
+  "bugs": {
+    "url": "https://github.com/peiyanlu/ts-utils/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript",
+    "utility",
+    "types",
+    "helpers",
+    "omit",
+    "instanceof"
+  ]
+}
