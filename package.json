@@ -1,14 +1,18 @@
 {
   "name": "test-release-01",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.1.tgz"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
