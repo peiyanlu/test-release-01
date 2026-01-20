@@ -10,7 +10,7 @@
   },
   "private": false,
   "dependencies": {
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.2.tgz"
+    "@peiyanlu/cli-utils": "^0.0.4"
   },
   "publishConfig": {
     "access": "public",
