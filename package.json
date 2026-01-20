@@ -3,13 +3,14 @@
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release"
   },
   "private": false,
   "dependencies": {
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.1.tgz"
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.2.tgz"
   },
   "publishConfig": {
     "access": "public",
