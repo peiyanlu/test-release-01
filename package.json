@@ -11,7 +11,8 @@
   "private": false,
   "dependencies": {
     "@peiyanlu/cli-utils": "^0.0.4",
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.3.tgz"
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.3.tgz",
+    "@vitejs/release-scripts": "^1.6.0"
   },
   "publishConfig": {
     "access": "public",
