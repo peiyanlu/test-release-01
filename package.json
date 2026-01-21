@@ -1,7 +1,7 @@
 {
   "name": "test-release-01",
   "version": "1.0.3",
-  "description": "a",
+  "description": "ab",
   "main": "index.js",
   "type": "module",
   "scripts": {
