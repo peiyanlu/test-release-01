@@ -65,10 +65,10 @@ export interface ParsedCommit {
   scope?: string
   breaking: boolean
   description: string
-  gitmoji?: string
+  gitmoji?: string[]
   pr?: string
   breaks?: string
-  issues?: Record<IssueLinkType, number[]>          // 👈 新增
+  issues?: Record<IssueLinkType, number[]>
   header?: string
   body?: string
   footer?: string
@@ -116,7 +116,6 @@ export const parseIssueFooters = (body: string) => {
   return res
 }
 
-
 export const parseCommit = (
   header: string,
   body: string,
@@ -124,49 +123,52 @@ export const parseCommit = (
   shortHash: string,
   fullHash: string,
 ): ParsedCommit | undefined => {
-  // if (shouldIgnoreCommit(header)) return
+  // 🔹
   
-  const regStr = `
-    (?<type>\\w+)(?:\\((?<scope>[^)]+)\\))?(?<breaking>!)?:\\s*
-    (?:(?<gitmoji>[\\u{1F300}-\\u{1FAFF}]))?\\s*
-    (?<description>.+?)\\s*
-    (?:\\(#(?<pr>\\d+)\\))?\\s*$
+  const str = `
+    ^\\s*
+    (?:(?<gitmoji1>[\\u{1F300}-\\u{1FAFF}]|:[a-z0-9+_\\-]+:))?
+    \\s*
+    (?<type>\\w+)(?:\\((?<scope>[^)]+)\\))?(?<breaking>!)?:
+    \\s*
+    (?:(?<gitmoji2>[\\u{1F300}-\\u{1FAFF}]|:[a-z0-9+_\\-]+:))?
+    \\s*
+    (?<description>.+?)
+    \\s*
+    (?:\\(#(?<pr>\\d+)\\))?
+    \\s*$
   `.replace(/\n\s+/g, '')
-  const reg = new RegExp(regStr, 'u')
-  
+  const reg = new RegExp(str, 'u')
   const match = header.match(reg)
-  if (!match?.groups) return
-  
-  // ======== 🔹 解析 Issues（标题 + footer） ========
-  
-  const issues = new Set<string>()
-  // 1️⃣ 从标题里解析： feat: xxx (#123)
-  if (match.groups.pr) {
-    issues.add(match.groups.pr)
+  if (!match?.groups) {
+    return {
+      type: '',
+      description: '',
+      breaking: false,
+      shortHash,
+      fullHash,
+      header,
+      body,
+      footer,
+    }
   }
   
-  // 2️⃣ 从 footer 解析：Closes/Fixes/Resolves #123
-  const issuePattern = /(closes|fixes|resolves)\s+#(\d+)/gi
-  let m: RegExpExecArray | null
-  while ((m = issuePattern.exec(footer)) !== null) {
-    issues.add(m[2])
-  }
-  
-  
-  // ======== 🔹 解析 BREAKING CHANGE ========
+  const breaksReg = /BREAKING CHANGE:\s*(?<breaks>.+)/i
+  const breaksMatch = footer.match(breaksReg)
   let breaks: string | undefined
-  if (/BREAKING CHANGE:/i.test(footer)) {
-    const fm = footer.match(/BREAKING CHANGE:\s*(.+)/i)
-    breaks = fm?.[1]
+  if (breaksMatch?.groups) {
+    let { groups: { breaks: temp } } = breaksMatch
+    breaks = temp
   }
   
+  const { groups: { type, scope, breaking, description, gitmoji1, gitmoji2, pr } } = match
   return {
-    type: match.groups.type,
-    scope: match.groups.scope,
-    breaking: !!match.groups.breaking || !!breaks,
-    gitmoji: match.groups.gitmoji,
-    description: match.groups.description.trim(),
-    pr: match.groups.pr,
+    type,
+    scope,
+    breaking: !!breaking || !!breaks,
+    gitmoji: [ gitmoji1, gitmoji2 ].filter(Boolean),
+    description: description.trim(),
+    pr,
     breaks,
     issues: parseIssueFooters(footer),
     shortHash,
@@ -177,15 +179,10 @@ export const parseCommit = (
   }
 }
 
+const normalizeLineEndings = (s: string) =>
+  s.trim().replace(/\r\n/g, '\n')
 
-const { from, to } = await resolveChangelogRange(true)
-const rawLog = await getLog(from, to, false)
-const commitsRaw = rawLog?.split('==END==').filter(Boolean) ?? []
-
-
-const normalize = (s: string) => s.trim().replace(/\r\n/g, '\n')
-
-const isFooterLine = (line: string) => {
+const isGitCommitFooterLine = (line: string) => {
   if (!line) return false
   
   return (
@@ -201,41 +198,50 @@ const isFooterLine = (line: string) => {
 }
 
 export const splitCommitBodyAndFooter = (raw: string) => {
-  const message = normalize(raw)
+  const message = normalizeLineEndings(raw)
   const lines = message.trim().split('\n')
   
   let footerStart = -1
   for (let i = lines.length - 1; i >= 0; i--) {
     const line = lines[i].trim()
     
-    if (isFooterLine(line)) {
+    if (isGitCommitFooterLine(line)) {
       footerStart = i
     } else if (footerStart !== -1 && line === '') {
       // footer 上方的空行，作为分界点
       break
     }
   }
+  const slice2str = (str: string[], s?: number, e?: number) => {
+    return str.slice(s, e).join('\n').trim()
+  }
   
   if (footerStart === -1) {
     return {
-      body: lines.slice(0).join('\n').trim(),
+      body: slice2str(lines, 0),
       footer: '',
     }
   }
   
   return {
-    body: lines.slice(0, footerStart).join('\n').trim(),
-    footer: lines.slice(footerStart).join('\n').trim(),
+    body: slice2str(lines, 0, footerStart),
+    footer: slice2str(lines, footerStart),
   }
 }
 
 
-const commits = commitsRaw
-  .map(raw => {
-    const [ fullHash, shortHash, subject, ...bodyFooter ] = raw.trim().split('\n').filter(Boolean)
-    const { body, footer } = splitCommitBodyAndFooter(bodyFooter.join('\n'))
-    
-    return parseCommit(subject, body, footer, shortHash, fullHash)
-  })
+const { from, to } = await resolveChangelogRange(true)
+const rawLog = await getLog('', to, false)
 
-console.log(commits)
+const parseLog  = (log: string = '') => {
+  const commitsRaw = log.split('==END==').filter(Boolean)
+  return commitsRaw
+    .map(raw => {
+      const [ fullHash, shortHash, subject, ...bodyFooter ] = raw.trim().split('\n').filter(Boolean)
+      const { body, footer } = splitCommitBodyAndFooter(bodyFooter.join('\n'))
+      
+      return parseCommit(subject, body, footer, shortHash, fullHash)
+    })
+}
+
+console.log(parseLog(rawLog))
