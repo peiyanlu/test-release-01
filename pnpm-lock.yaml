@@ -80,7 +80,7 @@ packages:
     engines: {node: '>=20'}
 
   '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz':
-    resolution: {integrity: sha512-ALrxVNAZpCjNOVfeHldY1C9zdt9yXn5jhwDqvTy0zpFv7sAvEJ3xAiiXBoKlTugdMr0adzGdC7hr2hYT6kIltQ==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
+    resolution: {integrity: sha512-rSFw9boNqdna0/dI5oyRZSXCB/tjytY1fA8Rb0C235Qgqrwn+VWfRZj7w4i5bUMD2fE+DHlHG1T4NHEbdhWj/Q==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
     version: 0.0.3
     engines: {node: '>=20'}
     hasBin: true

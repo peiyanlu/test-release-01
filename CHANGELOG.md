@@ -2,6 +2,23 @@
 
 
 
+## [1.0.7](https://github.com/peiyanlu/test-release-01/compare/1.0.5...1.0.7) (2026-01-21)
+
+
+**Full Changelog**: https://github.com/peiyanlu/test-release-01/compare/1.0.5...1.0.7
+
+
+
+## [1.0.6](https://github.com/peiyanlu/test-release-01/compare/1.0.5...1.0.6) (2026-01-21)
+
+
+
+
+
+**Full Changelog**: https://github.com/peiyanlu/test-release-01/compare/1.0.5...1.0.6
+
+
+
 ## [1.0.5](https://github.com/peiyanlu/test-release-01/compare/1.0.4...1.0.5) (2026-01-21)
 
 
