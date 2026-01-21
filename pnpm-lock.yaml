@@ -12,8 +12,8 @@ importers:
         specifier: ^0.0.4
         version: 0.0.4
       '@peiyanlu/release':
-        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.4.tgz
-        version: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz
+        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.3.tgz
+        version: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz
 
 packages:
 
@@ -79,9 +79,9 @@ packages:
     resolution: {integrity: sha512-HR3xvUmpZT94DTwmMIeD80preNpFNTkxA61SblnNPxEKl7Kxh3cZD/44dP3CLg7aTFnNmAAyvWGyNjo7F0vqkA==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz':
-    resolution: {integrity: sha512-ZU+mXwCBAT2NnVICTSdHzjsGvipYn9m9xIRu7+k2C1fLMk5vTBkN9KUFkc8PSAqAaPdR137qvQycq+gaOkd4gQ==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz}
-    version: 0.0.4
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz':
+    resolution: {integrity: sha512-ALrxVNAZpCjNOVfeHldY1C9zdt9yXn5jhwDqvTy0zpFv7sAvEJ3xAiiXBoKlTugdMr0adzGdC7hr2hYT6kIltQ==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
+    version: 0.0.3
     engines: {node: '>=20'}
     hasBin: true
 
@@ -268,7 +268,7 @@ snapshots:
 
   '@peiyanlu/cli-utils@0.0.4': {}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz':
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz':
     dependencies:
       '@clack/prompts': 0.11.0
       '@octokit/rest': 22.0.1
