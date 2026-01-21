@@ -1,6 +1,6 @@
 {
   "name": "test-release-01",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ab",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,8 @@
   },
   "private": false,
   "dependencies": {
-    "@peiyanlu/cli-utils": "^0.0.4"
+    "@peiyanlu/cli-utils": "^0.0.4",
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.4.tgz"
   },
   "publishConfig": {
     "access": "public",

@@ -15,6 +15,7 @@ export default defineConfig({
     commitMessage: 'chore(release): ${version}',
     tagMessage: 'Release ${version}',
     tagName: '${version}',
+    requireWorkDirClean: false,
   },
   npm: {
     publish: true,
