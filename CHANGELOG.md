@@ -1,3 +1,16 @@
+## <small>[1.0.10](https://github.com/peiyanlu/test-release-01/compare/1.0.9...1.0.10) (2026-01-22)</small>
+### ⚠ BREAKING CHANGES
+
+* test3 ([c285f91](https://github.com/peiyanlu/test-release-01/commit/c285f913e933f7f29e4cbe5efaaf22d05fe4297d))
+
+### ✨ 新功能
+
+* test6 ([f557d7f](https://github.com/peiyanlu/test-release-01/commit/f557d7fb6cb61b8eccf4273c9c0f359d06103f6b))
+
+### 🐛 Bug 修复
+
+* test3 ([c285f91](https://github.com/peiyanlu/test-release-01/commit/c285f913e933f7f29e4cbe5efaaf22d05fe4297d))
+* test355 ([87e45ab](https://github.com/peiyanlu/test-release-01/commit/87e45abacc09fdab82d305d5008536b34577af40))
 ## <small>[1.0.9](https://github.com/peiyanlu/test-release-01/compare/1.0.8...1.0.9) (2026-01-22)</small>
 ### ⚠ BREAKING CHANGES
 
