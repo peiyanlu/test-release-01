@@ -13,4 +13,5 @@ export const getLog = async (from = '', to = 'HEAD', print = true) => {
   return runGit(cmd, { trim: false })
 }
 
+
 console.log(await getLog())
