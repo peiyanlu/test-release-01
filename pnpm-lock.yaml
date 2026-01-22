@@ -95,7 +95,7 @@ packages:
     engines: {node: '>=20'}
 
   '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz':
-    resolution: {integrity: sha512-8KhVHcVBcRZVVU8fAzRX++y5oLzhuH7tNCqkeilSE7fqD9dCxip0qUgseXZyuJjT9OGYkl15/qlvf8nbaN76gQ==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
+    resolution: {integrity: sha512-OYsCc7ZF9asUfGtV0YL2XWIhUU5R7XUmdj8Hjvf866wNFLTk0zGxSqJ4zcbIK31Z4ULH7xFL0EPU929zGLVq5A==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
     version: 0.0.3
     engines: {node: '>=20'}
     hasBin: true
