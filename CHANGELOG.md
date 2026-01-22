@@ -1,3 +1,11 @@
+## <small>[1.0.11](https://github.com/peiyanlu/test-release-01/compare/1.0.10...1.0.11) (2026-01-22)</small>
+
+
+### ✨ 新功能
+
+* test7 ([acd9acb](https://github.com/peiyanlu/test-release-01/commit/acd9acb62da5f58196d2034eb18752e0074c629d))
+* test8 ([262ba9a](https://github.com/peiyanlu/test-release-01/commit/262ba9ae92e7846af98529d718573a6adad2b68c))
+
 ## <small>[1.0.10](https://github.com/peiyanlu/test-release-01/compare/1.0.9...1.0.10) (2026-01-22)</small>
 ### ⚠ BREAKING CHANGES
 
