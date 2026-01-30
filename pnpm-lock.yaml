@@ -12,8 +12,8 @@ importers:
         specifier: ^0.0.4
         version: 0.0.4
       '@peiyanlu/release':
-        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.4.tgz
-        version: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz(conventional-commits-filter@5.0.0)
+        specifier: ^0.0.5
+        version: 0.0.5(conventional-commits-filter@5.0.0)
       '@vitejs/release-scripts':
         specifier: ^1.6.0
         version: 1.6.0(conventional-commits-filter@5.0.0)
@@ -94,13 +94,12 @@ packages:
     resolution: {integrity: sha512-HR3xvUmpZT94DTwmMIeD80preNpFNTkxA61SblnNPxEKl7Kxh3cZD/44dP3CLg7aTFnNmAAyvWGyNjo7F0vqkA==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/cli-utils@0.0.5':
-    resolution: {integrity: sha512-nZtD0UibEXJ6HsdCU40NDkJUAV7dH/+CSjqEBryuRpRLFtKT6IAiduJGPTycGuWq5m5JURgyFU3Eyit3dCT0zA==}
+  '@peiyanlu/cli-utils@0.0.6':
+    resolution: {integrity: sha512-901CkN4W1rdKCG3PWmFpvTwDk1p7zYqt30IoAN/NqYNm85AvOOevY/pdjR1oibDTcgKjjo17jqab1Ye6Ki5uCg==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz':
-    resolution: {integrity: sha512-7SXg+Iz1dqiF4IxHgZ1m1U3KhKmvuP5K3uge5jqnzDMO50SkHzLeOIOULu1gLZdaUZ2ay6OoZtcGscbqd6g1gA==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz}
-    version: 0.0.4
+  '@peiyanlu/release@0.0.5':
+    resolution: {integrity: sha512-oIw4gPaaWSOmxSoeTRLB9GEKx7WgqgN08ur7bMyzTlc6eNbd/J2L57Cn8h57dpWsWbs1iTLfuQNlnVbu2aVR9w==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -521,13 +520,13 @@ snapshots:
 
   '@peiyanlu/cli-utils@0.0.4': {}
 
-  '@peiyanlu/cli-utils@0.0.5': {}
+  '@peiyanlu/cli-utils@0.0.6': {}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz(conventional-commits-filter@5.0.0)':
+  '@peiyanlu/release@0.0.5(conventional-commits-filter@5.0.0)':
     dependencies:
       '@clack/prompts': 0.11.0
       '@octokit/rest': 22.0.1
-      '@peiyanlu/cli-utils': 0.0.5
+      '@peiyanlu/cli-utils': 0.0.6
       '@peiyanlu/ts-utils': 0.0.4
       ansis: 4.2.0
       commander: 14.0.2
