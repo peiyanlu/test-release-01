@@ -1,3 +1,5 @@
+## <small>[1.0.12](https://github.com/peiyanlu/test-release-01/compare/1.0.11...1.0.12) (2026-01-30)</small>
+
 ## <small>[1.0.11](https://github.com/peiyanlu/test-release-01/compare/1.0.10...1.0.11) (2026-01-22)</small>
 
 
