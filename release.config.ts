@@ -13,8 +13,8 @@ export default defineConfig({
     commit: true,
     tag: true,
     push: true,
-    commitMessage: 'chore(release): ${version}',
-    tagMessage: 'Release ${version}',
+    commitMessage: 'chore(release): ${tag}',
+    tagMessage: 'Release ${tag}',
     requireWorkDirClean: false,
   },
   npm: {
@@ -22,7 +22,7 @@ export default defineConfig({
   },
   github: {
     release: true,
-    releaseName: 'Release ${version}',
+    releaseName: 'Release ${tag}',
     prerelease: false,
     draft: false,
     tokenRef: 'GITHUB_TOKEN',
