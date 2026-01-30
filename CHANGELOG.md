@@ -1,3 +1,9 @@
+## <small>[1.0.13](https://github.com/peiyanlu/test-release-01/compare/1.0.12...1.0.13) (2026-01-30)</small>
+
+### ✨ 新功能
+
+* update config ([1fdcb4d](https://github.com/peiyanlu/test-release-01/commit/1fdcb4da7d17e4cdbeb5d8b42383ad7863e96ecb))
+
 ## <small>[1.0.12](https://github.com/peiyanlu/test-release-01/compare/1.0.11...1.0.12) (2026-01-30)</small>
 
 ## <small>[1.0.11](https://github.com/peiyanlu/test-release-01/compare/1.0.10...1.0.11) (2026-01-22)</small>
