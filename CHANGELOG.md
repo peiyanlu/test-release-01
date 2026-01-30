@@ -1,3 +1,9 @@
+## <small>[1.0.14](https://github.com/peiyanlu/test-release-01/compare/1.0.13...1.0.14) (2026-01-30)</small>
+
+### ✨ 新功能
+
+* update deps ([8ac6943](https://github.com/peiyanlu/test-release-01/commit/8ac6943ca8e81b02874ecba4b7c2ad337ab8e319))
+
 ## <small>[1.0.13](https://github.com/peiyanlu/test-release-01/compare/1.0.12...1.0.13) (2026-01-30)</small>
 
 ### ✨ 新功能
