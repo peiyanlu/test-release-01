@@ -1,6 +1,6 @@
 {
   "name": "test-release-01",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "ab",
   "main": "index.js",
   "type": "module",
@@ -11,7 +11,7 @@
   "private": false,
   "dependencies": {
     "@peiyanlu/cli-utils": "^0.0.4",
-    "@peiyanlu/release": "^0.0.5",
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.5.tgz",
     "@vitejs/release-scripts": "^1.6.0"
   },
   "publishConfig": {

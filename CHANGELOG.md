@@ -1,3 +1,5 @@
+## <small>[1.0.15](https://github.com/peiyanlu/test-release-01/compare/1.0.14...1.0.15) (2026-02-01)</small>
+
 ## <small>[1.0.14](https://github.com/peiyanlu/test-release-01/compare/1.0.13...1.0.14) (2026-01-30)</small>
 
 ### ✨ 新功能
