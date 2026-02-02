@@ -99,7 +99,7 @@ packages:
     engines: {node: '>=20'}
 
   '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz':
-    resolution: {integrity: sha512-BpeckARLeewOszSy21jcGk/5C4puXNgnwlFm0+VkXCYcGlwaQMLFpoHaYEn8P9FklmdnALHJPeNzk2dRjHV/Wg==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz}
+    resolution: {integrity: sha512-QgZLYhuiE32PlYRVyFOjpzvPOomTdNAf8hVGcuXEL4svxThtwCxKoIGb8s5wZHe6qu5imLiLEOH/MRDZXhCtHg==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz}
     version: 0.0.5
     engines: {node: '>=20'}
     hasBin: true

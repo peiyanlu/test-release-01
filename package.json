@@ -1,12 +1,14 @@
 {
   "name": "test-release-01",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "ab",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "release"
+    "release": "release",
+    "prepare": "release prepare",
+    "ci-publish": "node publish.js"
   },
   "private": false,
   "dependencies": {
