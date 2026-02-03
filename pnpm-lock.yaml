@@ -12,8 +12,8 @@ importers:
         specifier: ^0.0.4
         version: 0.0.4
       '@peiyanlu/release':
-        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.5.tgz
-        version: file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz(conventional-commits-filter@5.0.0)
+        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.6.tgz
+        version: file:../@peiyanlu/release/peiyanlu-release-0.0.6.tgz(conventional-commits-filter@5.0.0)
       '@vitejs/release-scripts':
         specifier: ^1.6.0
         version: 1.6.0(conventional-commits-filter@5.0.0)
@@ -98,9 +98,9 @@ packages:
     resolution: {integrity: sha512-901CkN4W1rdKCG3PWmFpvTwDk1p7zYqt30IoAN/NqYNm85AvOOevY/pdjR1oibDTcgKjjo17jqab1Ye6Ki5uCg==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz':
-    resolution: {integrity: sha512-QgZLYhuiE32PlYRVyFOjpzvPOomTdNAf8hVGcuXEL4svxThtwCxKoIGb8s5wZHe6qu5imLiLEOH/MRDZXhCtHg==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz}
-    version: 0.0.5
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.6.tgz':
+    resolution: {integrity: sha512-fxoHqS+Iwm/1KBNhPeQQKtzPt0nNLCw5LNkYfXy6ikXFR88GD+ka2AIFQO62FF8XZdTURqmKtyAbkDmF0ya+3w==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.6.tgz}
+    version: 0.0.6
     engines: {node: '>=20'}
     hasBin: true
 
@@ -523,7 +523,7 @@ snapshots:
 
   '@peiyanlu/cli-utils@0.0.6': {}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.5.tgz(conventional-commits-filter@5.0.0)':
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.6.tgz(conventional-commits-filter@5.0.0)':
     dependencies:
       '@clack/prompts': 0.11.0
       '@octokit/rest': 22.0.1

@@ -1,19 +1,19 @@
 {
   "name": "test-release-01",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "ab",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release",
-    "prepare": "release prepare",
+    "release:prepare": "release --prepare",
     "ci-publish": "node publish.js"
   },
   "private": false,
   "dependencies": {
     "@peiyanlu/cli-utils": "^0.0.4",
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.5.tgz",
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.6.tgz",
     "@vitejs/release-scripts": "^1.6.0"
   },
   "publishConfig": {
