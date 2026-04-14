@@ -22,7 +22,7 @@ jobs:
           ref: ${{ github.ref }}
       
       - name: Release
-        uses: peiyanlu/release@v0.0.9
+        uses: peiyanlu/release@v0.0.10
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
