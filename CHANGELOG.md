@@ -1,3 +1,8 @@
+## <small>[1.0.20](https://github.com/peiyanlu/test-release-01/compare/1.0.19...1.0.20) (2026-04-14)</small>
+
+### ✨ 新功能
+
+* 测试 action ([5561192](https://github.com/peiyanlu/test-release-01/commit/5561192e68b0ffbf00d5e6a5d21fbe0636c71207))
 ## <small>[1.0.19](https://github.com/peiyanlu/test-release-01/compare/1.0.18...1.0.19) (2026-04-14)</small>
 
 ### ✨ 新功能
