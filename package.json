@@ -13,7 +13,7 @@
   "private": false,
   "dependencies": {
     "@peiyanlu/cli-utils": "^0.0.8",
-    "@peiyanlu/release": "^0.0.9",
+    "@peiyanlu/release": "^0.0.15",
     "@vitejs/release-scripts": "^1.6.0",
     "tsx": "^4.21.0"
   },
