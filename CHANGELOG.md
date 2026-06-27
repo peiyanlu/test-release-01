@@ -1,3 +1,10 @@
+## <small>[1.0.22](https://github.com/peiyanlu/test-release-01/compare/1.0.21...1.0.22) (2026-06-27)</small>
+
+### ✨ 新功能
+
+* 测试 action ([3c6656b](https://github.com/peiyanlu/test-release-01/commit/3c6656b8daa774286af5c697f0b9ec159ac2ea5b))
+* 测试 GPG ([1cac912](https://github.com/peiyanlu/test-release-01/commit/1cac912794d4c227d1eb138056bff945eb81119c))
+
 ## <small>[1.0.21](https://github.com/peiyanlu/test-release-01/compare/1.0.20...1.0.21) (2026-04-14)</small>
 
 ### ✨ 新功能
