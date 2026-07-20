@@ -15,10 +15,18 @@ export default defineConfig({
     push: true,
     commitMessage: 'chore(release): ${tag}',
     tagMessage: 'Release ${tag}',
-    requireWorkDirClean: false,
+    requireCleanWorkingTree: false,
   },
   npm: {
     publish: true,
+    cleanup: {
+      packageJson: {
+        ignoreFields: [ 'testfields.a' ],
+        keepScripts: [ 'test' ],
+      },
+      readme: true,
+      removeTempDir: false,
+    },
   },
   github: {
     release: true,

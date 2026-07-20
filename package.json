@@ -2,25 +2,43 @@
   "name": "test-release-01",
   "version": "1.0.23",
   "description": "ab",
-  "main": "index.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsdown",
+    "prepublishOnly": "tsdown",
     "release": "release",
     "release:prepare": "release --prepare",
     "ci-publish": "tsx publishCI.ts"
   },
   "private": false,
   "dependencies": {
-    "@peiyanlu/cli-utils": "^0.0.8",
-    "@vitejs/release-scripts": "^1.6.0",
-    "tsx": "^4.21.0"
+    "@peiyanlu/cli-utils": "^0.0.8"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-1.1.2.tgz"
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-1.1.2.tgz",
+    "@types/node": "^26.1.1",
+    "@vitejs/release-scripts": "^1.6.0",
+    "publint": "^0.3.21",
+    "tsdown": "^0.22.9",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "testfields": {
+    "a": "7777777777",
+    "b": "8888888888"
   }
 }

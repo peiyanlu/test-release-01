@@ -2,7 +2,7 @@
 
 test-release-01
 
-## Install
+## 安装
 
 ```shell
 pnpm add test-release-01
