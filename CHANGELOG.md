@@ -1,3 +1,9 @@
+## <small>[1.0.23](https://github.com/peiyanlu/test-release-01/compare/1.0.22...1.0.23) (2026-07-20)</small>
+
+### ✨ 新功能
+
+* 测试 clean ([7564eeb](https://github.com/peiyanlu/test-release-01/commit/7564eeb7fbed52290986a90d73a6aa984c74fecb))
+
 ## <small>[1.0.22](https://github.com/peiyanlu/test-release-01/compare/1.0.21...1.0.22) (2026-06-27)</small>
 
 ### ✨ 新功能
