@@ -15,7 +15,8 @@
     "prepublishOnly": "tsdown",
     "release": "release",
     "release:prepare": "release --prepare",
-    "ci-publish": "tsx publishCI.ts"
+    "ci-publish": "tsx publishCI.ts",
+    "test:cov": "vitest run --coverage"
   },
   "private": false,
   "dependencies": {
@@ -29,10 +30,12 @@
     "@peiyanlu/release": "^1.1.2",
     "@types/node": "^26.1.1",
     "@vitejs/release-scripts": "^1.6.0",
+    "@vitest/coverage-v8": "^4.1.10",
     "publint": "^0.3.21",
     "tsdown": "^0.22.9",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
   },
   "files": [
     "dist"
