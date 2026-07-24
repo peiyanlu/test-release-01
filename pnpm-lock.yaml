@@ -13,8 +13,8 @@ importers:
         version: 0.0.8
     devDependencies:
       '@peiyanlu/release':
-        specifier: file:E:/@peiyanlu/release/peiyanlu-release-1.1.2.tgz
-        version: file:../../@peiyanlu/release/peiyanlu-release-1.1.2.tgz(conventional-commits-filter@6.0.1)
+        specifier: ^1.1.2
+        version: 1.1.2(conventional-commits-filter@6.0.1)
       '@types/node':
         specifier: ^26.1.1
         version: 26.1.1
@@ -312,22 +312,17 @@ packages:
     resolution: {integrity: sha512-vaGXGxK70zFm14clXgjcF07poPgUUSO7eXHBNbtfgrhYppdY3zPsKXxcfrwuzYXkxN+zJPi+Cm0PouQtp2L9dw==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/node-utils@0.0.2':
-    resolution: {integrity: sha512-mX0WtbYinIGo40WSUTmFFsOLOcZS1js6pLA40KWEkRvX3aIpvPa5Sdk38FTL2ccMLWNLESv2Ha8h0dXtHIH/Aw==}
-    engines: {node: '>=22'}
-
-  '@peiyanlu/release@file:../../@peiyanlu/release/peiyanlu-release-1.1.2.tgz':
-    resolution: {integrity: sha512-I2ZcU0VRxIlyl5vaypQv60wpzt8835mGCDcK3nEclEv8f1EG9aLHU3xPgC/0MZ5L/Sf+3uZXbWzLUAJLQeU6IQ==, tarball: file:../../@peiyanlu/release/peiyanlu-release-1.1.2.tgz}
-    version: 1.1.2
+  '@peiyanlu/release@1.1.2':
+    resolution: {integrity: sha512-eJIwWhrHI1Q4icdsBuqB//OtNp/j2qeiuo25IJgrKyKuoFw/CdOiaR5ASRweIhj29a2X4rqUw5+DnqRZ03c+LQ==}
     engines: {node: '>=20'}
     hasBin: true
 
-  '@peiyanlu/ts-utils@0.0.11':
-    resolution: {integrity: sha512-0x9PC1A6ogLkPuycq9nHC2YkfKwgGLIzPIXNF7J4r67CXHS/Xj8x87X1I+i4YZhKWgdRqA+ucZwSAT4AtwZBYA==}
-    engines: {node: '>=20.0.0'}
-
   '@peiyanlu/ts-utils@0.0.8':
     resolution: {integrity: sha512-Pk19z1Ihcvvu5VP8dAK+QgrZGnFdxVP8To27asAHq54OijzhdouEUHufxuCy9aCAMdfdZlTvqqY8ovWsIyP6Hg==}
+    engines: {node: '>=20.0.0'}
+
+  '@peiyanlu/ts-utils@0.0.9':
+    resolution: {integrity: sha512-05Ea15l/YYF99OkbnL8efac3u3UiQGeZc1Tf0AvCufRueIqwU8Y/JW7bL7hYa2MBHQrvOPxrhNUsEMj0rjXlbw==}
     engines: {node: '>=20.0.0'}
 
   '@publint/pack@0.1.4':
@@ -599,16 +594,8 @@ packages:
     resolution: {integrity: sha512-DhBpBfXL4SS2uC0N922MMajKR3CdrTG0u2or1PNYgXMsrSzViJrbtvT0nCLlLGUI0plam/ZZCs7aAauHtW9thw==}
     engines: {node: '>=22'}
 
-  balanced-match@4.0.4:
-    resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
-    engines: {node: 18 || 20 || >=22}
-
   before-after-hook@4.0.0:
     resolution: {integrity: sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ==}
-
-  brace-expansion@5.0.7:
-    resolution: {integrity: sha512-7oFy703dxfY3/NLxC1fh2SUCQ0H9rmAY+5EpDVfXjUTTs+HEwR2nYaqLv+GWcTsumwxPfiz6CzCNkwXwBUwqCA==}
-    engines: {node: 18 || 20 || >=22}
 
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
@@ -760,10 +747,6 @@ packages:
     resolution: {integrity: sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==}
     engines: {node: '>=18'}
 
-  minimatch@10.2.5:
-    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
-    engines: {node: 18 || 20 || >=22}
-
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -781,10 +764,6 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
-
-  picomatch@4.0.4:
-    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
-    engines: {node: '>=12'}
 
   picomatch@4.0.5:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
@@ -1176,13 +1155,7 @@ snapshots:
     dependencies:
       semver: 7.8.5
 
-  '@peiyanlu/node-utils@0.0.2':
-    dependencies:
-      '@peiyanlu/ts-utils': 0.0.11
-      minimatch: 10.2.5
-      tinyglobby: 0.2.17
-
-  '@peiyanlu/release@file:../../@peiyanlu/release/peiyanlu-release-1.1.2.tgz(conventional-commits-filter@6.0.1)':
+  '@peiyanlu/release@1.1.2(conventional-commits-filter@6.0.1)':
     dependencies:
       '@actions/core': 3.0.1
       '@actions/github': 9.1.1
@@ -1190,15 +1163,13 @@ snapshots:
       '@conventional-changelog/template': 1.2.1
       '@octokit/rest': 22.0.1
       '@peiyanlu/cli-utils': 0.0.13
-      '@peiyanlu/node-utils': 0.0.2
-      '@peiyanlu/ts-utils': 0.0.11
+      '@peiyanlu/ts-utils': 0.0.9
       ansis: 4.3.1
       commander: 15.0.0
       conventional-changelog: 8.1.0(conventional-commits-filter@6.0.1)
       conventional-changelog-conventionalcommits: 10.2.1
       conventional-recommended-bump: 12.1.0
       mime-types: 3.0.2
-      minimatch: 10.2.5
       open: 11.0.0
       publint: 0.3.21
       semver: 7.8.5
@@ -1206,9 +1177,9 @@ snapshots:
     transitivePeerDependencies:
       - conventional-commits-filter
 
-  '@peiyanlu/ts-utils@0.0.11': {}
-
   '@peiyanlu/ts-utils@0.0.8': {}
+
+  '@peiyanlu/ts-utils@0.0.9': {}
 
   '@publint/pack@0.1.4': {}
 
@@ -1379,13 +1350,7 @@ snapshots:
 
   argue-cli@3.1.0: {}
 
-  balanced-match@4.0.4: {}
-
   before-after-hook@4.0.0: {}
-
-  brace-expansion@5.0.7:
-    dependencies:
-      balanced-match: 4.0.4
 
   bundle-name@4.1.0:
     dependencies:
@@ -1497,9 +1462,9 @@ snapshots:
     dependencies:
       walk-up-path: 4.0.0
 
-  fdir@6.5.0(picomatch@4.0.4):
+  fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   fsevents@2.3.3:
     optional: true
@@ -1536,10 +1501,6 @@ snapshots:
     dependencies:
       mime-db: 1.54.0
 
-  minimatch@10.2.5:
-    dependencies:
-      brace-expansion: 5.0.7
-
   mri@1.2.0: {}
 
   obug@2.1.4: {}
@@ -1556,8 +1517,6 @@ snapshots:
   package-manager-detector@1.6.0: {}
 
   picocolors@1.1.1: {}
-
-  picomatch@4.0.4: {}
 
   picomatch@4.0.5: {}
 
@@ -1628,8 +1587,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
 
   tree-kill@1.2.2: {}
 
