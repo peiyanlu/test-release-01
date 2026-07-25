@@ -57,9 +57,8 @@ jobs:
       - name: Test
         run: pnpm test:cov
       
-      - name: Trust Coveralls tap
-        if: runner.os == 'macOS'
-        run: brew trust coverallsapp/coveralls
+      - name: Install Coveralls
+        run: pnpm dlx coveralls
       
       - name: Coverage (Report - ${{ matrix.os }})
         uses: coverallsapp/github-action@v2
@@ -67,7 +66,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           flag-name: ${{ matrix.os }}
           parallel: true
-          fail-on-error: false
   
   finish:
     name: Finish
@@ -76,15 +74,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-          fetch-tags: true
-          
       - name: Finish Coveralls
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           parallel-finished: true
-        continue-on-error: true
+          debug: true
