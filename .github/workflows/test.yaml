@@ -57,8 +57,9 @@ jobs:
       - name: Test
         run: pnpm test:cov
       
-      - name: Install Coveralls
-        run: pnpm add -g coveralls
+      - name: Trust taps
+        if: runner.os == 'macOS'
+        run: brew trust --formula coverallsapp/coveralls/coveralls
       
       - name: Coverage (Report - ${{ matrix.os }})
         uses: coverallsapp/github-action@v2
