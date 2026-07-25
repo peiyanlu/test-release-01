@@ -58,7 +58,7 @@ jobs:
         run: pnpm test:cov
       
       - name: Install Coveralls
-        run: pnpm dlx coveralls
+        run: pnpm add -g coveralls
       
       - name: Coverage (Report - ${{ matrix.os }})
         uses: coverallsapp/github-action@v2
