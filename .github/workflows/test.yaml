@@ -55,11 +55,15 @@ jobs:
         run: pnpm build
       
       - name: Test
-        run: pnpm test:cov
+        run: |
+          pnpm test:cov
+          ls coverage
       
       - name: Trust taps
         if: runner.os == 'macOS'
-        run: brew trust --formula coverallsapp/coveralls/coveralls
+        run: |
+          brew trust coverallsapp/coveralls
+          brew trust aws/tap
       
       - name: Coverage (Report - ${{ matrix.os }})
         uses: coverallsapp/github-action@v2
