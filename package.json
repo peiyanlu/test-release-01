@@ -27,7 +27,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@peiyanlu/release": "^1.1.2",
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-1.3.1.tgz",
     "@types/node": "^26.1.1",
     "@vitejs/release-scripts": "^1.6.0",
     "@vitest/coverage-v8": "^4.1.10",
