@@ -1,3 +1,7 @@
+## <small>[1.0.26](https://github.com/peiyanlu/test-release-01/compare/1.0.25...1.0.26) (2026-10-05)</small>
+
+Version bump without any changes.
+
 ## <small>[1.0.25](https://github.com/peiyanlu/test-release-01/compare/1.0.24...1.0.25) (2026-10-05)</small>
 
 Version bump without any changes.
