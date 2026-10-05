@@ -363,7 +363,7 @@ packages:
     engines: {node: '>=22'}
 
   '@peiyanlu/release@file:../../@peiyanlu/release/peiyanlu-release-1.3.1.tgz':
-    resolution: {integrity: sha512-kipBH+MEmH+iV+F0jMh3LFG04h4szo2JwKjpZdhQqmE/+LGz+dYZ7ynD9h6vUMbCQJhaKr+3IuSxt3RYtKQ8Rg==, tarball: file:../../@peiyanlu/release/peiyanlu-release-1.3.1.tgz}
+    resolution: {integrity: sha512-Ec0+HEjt91oz3pT1cIPv1LWsm1T5bH1Ag401rpPqbE2YYDKbgq/0+r9VvrMikKEvMt4kt2FfaIWx066xM/Xb8A==, tarball: file:../../@peiyanlu/release/peiyanlu-release-1.3.1.tgz}
     version: 1.3.1
     engines: {node: '>=20'}
     hasBin: true
