@@ -1,8 +1,10 @@
-import { defineConfig } from '@peiyanlu/release'
+import { defineConfig, GithubHosting, PnpmProject } from '@peiyanlu/release'
 
 
 export default defineConfig({
-  bump: {
+  project: new PnpmProject({
     tagPrefix: '',
-  },
+  }),
+  hosting: new GithubHosting(),
+  bump: {},
 })
