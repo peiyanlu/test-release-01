@@ -3,7 +3,7 @@ name: Release Tag
 on:
   push:
     tags:
-      - 1.*.*
+      - 100.*.*
 
 permissions:
   contents: write

@@ -9,8 +9,6 @@
     "build": "tsdown",
     "prepublishOnly": "tsdown",
     "release": "release",
-    "release:prepare": "release --prepare",
-    "ci-publish": "tsx publishCI.ts",
     "test:cov": "vitest run --coverage"
   },
   "private": false,
