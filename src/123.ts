@@ -18,7 +18,7 @@ export const getLog = async (from = '', to = 'HEAD') => {
 await cp('./js/', './temp/', {
   recursive: true,
   filter(src, dest) {
-    console.log(src, dest)
+    // console.log(src, dest)
     return true
   }
 })
