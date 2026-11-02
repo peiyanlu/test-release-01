@@ -1,3 +1,9 @@
+## <small>[1.1.2](https://github.com/peiyanlu/test-release-01/compare/1.1.1...1.1.2) (2026-11-02)</small>
+
+### 🐛 Bug 修复
+
+* publish test ([bea5bf3](https://github.com/peiyanlu/test-release-01/commit/bea5bf3f56a456e9ba367a6398ca29318806a869))
+
 ## <small>[1.1.1](https://github.com/peiyanlu/test-release-01/compare/1.1.0...1.1.1) (2026-11-02)</small>
 
 ### 🐛 Bug 修复
