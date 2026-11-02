@@ -6,5 +6,7 @@ export default defineConfig({
     tagPrefix: '',
   }),
   hosting: new GithubHosting(),
-  bump: {},
+  releaser: {
+    verbose: true,
+  },
 })
