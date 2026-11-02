@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/peiyanlu/test-release-01/compare/1.0.35...1.1.0) (2026-11-02)
+
+### ✨ 新功能
+
+* release test ([eb26e00](https://github.com/peiyanlu/test-release-01/commit/eb26e005edaeb7a3b8515827f7e8edacac1bad24))
+
 ## <small>[1.0.35](https://github.com/peiyanlu/test-release-01/compare/1.0.34...1.0.35) (2026-10-27)</small>
 
 Version bump without any changes.
