@@ -3,7 +3,7 @@ name: Detect Deps
 on:
   push:
     branches:
-      - master
+      - master-un
     paths:
       - package.json
   workflow_dispatch:
