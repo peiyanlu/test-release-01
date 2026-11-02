@@ -1,6 +1,6 @@
 {
   "name": "test-release-01",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "ab",
   "type": "module",
   "exports": "./src/index.ts",

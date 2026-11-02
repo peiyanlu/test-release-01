@@ -1,3 +1,9 @@
+## <small>[1.1.1](https://github.com/peiyanlu/test-release-01/compare/1.1.0...1.1.1) (2026-11-02)</small>
+
+### 🐛 Bug 修复
+
+* npm Trusted Publishing ([bc91de2](https://github.com/peiyanlu/test-release-01/commit/bc91de2c0229fc0054dba69cf33dd049aca0037c))
+
 ## [1.1.0](https://github.com/peiyanlu/test-release-01/compare/1.0.35...1.1.0) (2026-11-02)
 
 ### ✨ 新功能
