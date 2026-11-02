@@ -42,5 +42,9 @@
   "testfields": {
     "a": "7777777777",
     "b": "8888888888"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peiyanlu/test-release-01.git"
   }
 }
